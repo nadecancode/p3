@@ -16,15 +16,17 @@ jobs:
         with:
           node-version: 18
           cache: npm
-
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 8
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: build
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
-          npm run build
+          pnpm run build
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v2

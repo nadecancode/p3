@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@sveltejs/adapter-auto': ^3.0.0
+  '@sveltejs/adapter-static': ^3.0.1
   '@sveltejs/kit': ^2.0.0
   '@sveltejs/vite-plugin-svelte': ^3.0.0
   d3: ^7.9.0
@@ -19,6 +20,7 @@ dependencies:
 
 devDependencies:
   '@sveltejs/adapter-auto': 3.2.0_@sveltejs+kit@2.5.7
+  '@sveltejs/adapter-static': 3.0.1_@sveltejs+kit@2.5.7
   '@sveltejs/kit': 2.5.7_kftpsawur5mkndkfiqariszxva
   '@sveltejs/vite-plugin-svelte': 3.1.0_svelte@4.2.16+vite@5.2.11
   svelte: 4.2.16
@@ -450,6 +452,14 @@ packages:
     dependencies:
       '@sveltejs/kit': 2.5.7_kftpsawur5mkndkfiqariszxva
       import-meta-resolve: 4.1.0
+    dev: true
+
+  /@sveltejs/adapter-static/3.0.1_@sveltejs+kit@2.5.7:
+    resolution: {integrity: sha512-6lMvf7xYEJ+oGeR5L8DFJJrowkefTK6ZgA4JiMqoClMkKq0s6yvsd3FZfCFvX1fQ0tpCD7fkuRVHsnUVgsHyNg==}
+    peerDependencies:
+      '@sveltejs/kit': ^2.0.0
+    dependencies:
+      '@sveltejs/kit': 2.5.7_kftpsawur5mkndkfiqariszxva
     dev: true
 
   /@sveltejs/kit/2.5.7_kftpsawur5mkndkfiqariszxva:

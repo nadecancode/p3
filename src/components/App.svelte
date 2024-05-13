@@ -90,14 +90,14 @@
             });
 
             if (chart) {
-                chart.reset();
+                chart.erase();
             }
 
             chart = new Chart(window.screen.width / 2, n);
 
-            chart.load(filtered);
-            chart.createFrames();
-            chart.play(frame => {
+            chart.populate(filtered);
+            chart.outlineFrames();
+            chart.animateFrames(frame => {
                 tops = frame[1].splice(0, n).map(f => f.name);
                 year = frame[0];
             });
